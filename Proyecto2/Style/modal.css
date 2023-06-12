@@ -1,0 +1,42 @@
+.popup{
+    width: 450px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 6px;
+    padding: 30px 40px;
+    display: grid;
+    position: absolute;
+    gap: 1em;
+    place-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-align: center;
+}
+
+.modal_title{
+    font-size: 2.5rem;
+    color: #ce93c8;
+}
+
+.modal_paragram{
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.popup button{
+    display: block;
+   margin: 0 0 20px auto;
+   background-color: transparent;
+   font-size: 30px;
+   color: #c5c5c5;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+
+.modal_close:hover{
+    color: #f26250;
+    background-color:  #fff;
+}

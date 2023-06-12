@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se agrega el titulo de la pagina-->
+    <title>Polibucks</title>
+    <!--Enlace hacia los estilos-->
+    <link rel="stylesheet" href="Style/estilos.css">
+    <link rel="stylesheet" href="Style/modal.css">
+    <link rel="stylesheet" href="Style/styles_header.css">
+    <script src="Scripts/modal.js" defer></script>
+    <script src="Scripts/script_header.js" defer></script>
+    <script src="Scripts/reloj.js" defer></script>
+    <!--Se agrega el icono de la pagina-->
+    <link rel="shortcut icon" href="Images/icon.ico" type="images/icon.ico">
+</head>
+
+<body>
+    <header class="main-header">
+        <img src="Images/FINAL.png" class="logo">
+        <nav id="nav" class="main-nav">
+            <div class="nav-links">
+                <a class="link-item" href="index.html">Inicio</a>
+                <a class="link-item" href="pagina_menu.html">Menú</a>
+                <a class="link-item" href="pagina_rewards.html">Rewards</a>
+                <a class="link-item" href="PaginaEventos.html">Eventos</a>
+                <a class="link-item" href="nosotros.html">Nosotros</a>
+                <a class="link-item" href="http://localhost:3000/">Administrar</a>
+            </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!--Reloj-->
+    <header class="relosjs">
+        <nav>
+            <form name="form_dia">
+                <input class="dia" type="text" name="dia" size="15" onfocus="window.document.form_dia.dia.blur()">
+            </form>
+            <form name="form_reloj">
+                <input class="reloj" type="text" name="reloj" size="10" onfocus="window.document.form_reloj.reloj.blur()">
+            </form>
+        </nav>
+    </header>
+
+    <!--Contenido principal-->
+    <main>
+        <div class="slider">
+            <!--Se crea una lista desordenada-->
+           <ul>
+            <!--Elementos de la lista-->
+            <li><a href="../pagina_rewards/index.html"><img src="Images/Menu.jpeg" alt=""></a></li>
+            <li><a href="../pagina_menu/menu.html"><img src="Images/HolaPrinav.jpeg" alt=""></a></li>
+            <li><a href="../pagina_nosotros/nosotros.html"><img src="Images/Conocenos.jpeg" alt=""></a></li>
+            <li><a href="../pagina_eventos/Pagina2.html"><img src="Images/DayPoli.jpeg" alt=""></a></li>
+           </ul> 
+        </div>
+        <!--Se agregara una seccion que contienen imagen y texto-->
+        <div>
+            <img src="Images/Frase&I.png" alt="" width="1200" height="400" class="Contend">
+        </div>
+    </main>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2 class="modal_title">¡Bienvenido, Gracias por Visitar!</h2>
+        <p class="modal_paragram">Visitante numero</p>
+        <p class="modal_paragram">Disfruta de tu instancia </p>
+    </div>
+    <!--Lienea para dividir el contenido principal del footer-->
+    <hr class="linea">
+    <!--Pie de página-->
+    <footer class="footer">
+        <p>Todos los derechos reservados 2023. </p>
+        <p> &copy; Polibucks S.A de C.V</p>
+    </footer>
+</body>
+<script>
+    fetch('http://localhost:3000/create')
+      .then(response => response.json())
+      .then(data => {
+        const dataList = document.getElementById('data-list');
+        data.forEach(item => {
+          const listItem = document.createElement('li');
+          listItem.textContent = item.name;
+          dataList.appendChild(listItem);
+        });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  </script>
+
+
+</html>

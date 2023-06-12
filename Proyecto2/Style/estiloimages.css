@@ -1,0 +1,47 @@
+/*Colocacion de imagenes*/
+.img1{
+    border-radius: 50%;
+}
+.img2{
+    border-radius: 50%;
+}
+.img3{
+    border-radius: 50%;
+}
+.img4{
+    border-radius: 50%;
+}
+/*Colocacion de texto*/
+.tele1{
+    font-family: 'Tilt Neon', cursive;
+    background-color: rgb(195, 174, 165);
+    text-align: center;
+    padding:10px;
+}
+.tele2{
+    font-family: 'Tilt Neon', cursive;
+    background-color: rgb(141, 116, 125);
+    text-align: center;
+    padding:10px;
+}
+.tele3{
+    font-family: 'Tilt Neon', cursive;
+    background-color: rgb(195, 174, 165);
+    text-align: center;
+    padding:10px;
+}
+.tele4{
+    font-family: 'Tilt Neon', cursive;
+    background-color: rgb(141, 116, 125);
+    text-align: center;
+    padding:10px;
+}
+
+.boton3{
+    left: 15%;
+    color: white;
+    border-color: white;
+    background-color: rgb(113, 94, 102);
+    position: relative;
+    border-radius: 6px;
+}

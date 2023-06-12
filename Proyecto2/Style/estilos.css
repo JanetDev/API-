@@ -1,0 +1,140 @@
+/*Se define el tipo de letra previamente descragado*/
+@font-face {
+    font-family: Fuente;
+    src: url("Pacifico-Regular.ttf");
+}
+
+/*Color de fondo*/
+body{
+    background-color: #c29d84;
+}
+
+/*Estilos de la barra de navegacion*/
+.nav1{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(236, 227, 238);
+    padding: 0.25em;
+}
+/*Estilos del contenedor para que se centre*/
+.Contend{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    height: auto;
+
+}
+.Donaciones{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    height: auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Fuente;
+}
+
+/*Se da estilo al slider para ue sea en bloque o una tipo barra de desplazamiento*/
+.slider{
+    width: 1200px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+/*Se da estilo a la lista desordenada*/
+/*Tiene una animacion que durara 15s y tedra una transicion*/
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+/*Estilos a los elementos de la lista*/
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+/*Las imagen al 100%*/
+.slider img{
+    width: 100%;
+}
+
+/*Se controlar los pasos intermedios de la secuencia de animacion */
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+
+}
+
+/*Estilos para footer*/
+.footer{
+    color: rgb(113, 94, 102);
+    text-align: center;
+}
+
+/*Estilos de la linea hr*/
+.linea{
+    color: rgb(113, 94, 102);
+}
+
+/*Estilo reloj*/
+.reloj{
+    font-family: 'Tilt Neon', cursive;
+    position: relative;
+    float: right;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(237, 227, 230);
+    margin: 1em;
+}
+.dia{
+    font-family: 'Tilt Neon', cursive;
+    position: relative;
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+    background-color: rgb(237, 227, 230);
+    margin: 1em;
+}
+
+
+@media screen and (max-width: 850px) {
+    body {
+        display: block;
+    }
+
+    .relosjs {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .Contend {
+        width: 100%;
+    }
+
+    .popup{
+        width: 100%;
+    }
+}

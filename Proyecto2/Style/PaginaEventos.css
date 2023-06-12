@@ -1,0 +1,139 @@
+/*Tipo de fuente de letra a utilizar previamente descargada*/
+@font-face {
+    font-family: Fuente;
+    src: url("Pacifico-Regular.ttf");
+}
+
+/*Estilo al cuerpo de la pagina color de fondo*/
+body{
+    background-color: #F1E2DB;
+    text-align: center;
+
+}
+/*Se agrega el estilo de letra a la clase evento*/
+.Evento{
+    font-family: "Fuente" ;
+    font-size: 1.5em;
+}
+
+/*Se crea el estilo que tendran los contenedores*/
+.Prima, 
+.Prima1,
+.Poliday,
+.Pet.Derecha,
+.Prima2{
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 10px;
+    -webkit-border-radius: 10px ;
+        border-radius: 10px;
+}
+/*Color de letra para los H2*/
+h2{
+    color:#470064;
+}
+
+ /*Se define el color y area de relleno*/
+.Prima{
+    padding: 30px;
+    color:black;
+    background:linear-gradient( #F6E1FF, #D773FF);
+}
+
+ /*Se define el color y area de relleno*/
+.Prima2{
+    padding: 30px;
+    color:black;
+	background:linear-gradient( #F0cdff, #Ce57fd); 
+}
+
+/*Estilos para la barra de navegacion*/
+.nav1{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(236, 227, 238);
+    padding: 0.25em;
+}
+
+/*Se crea un borde dentro de los contenedores*/
+.Prima1{
+    border: dotted 10pt white;
+}
+
+/*Estilos para la tabla, coo la posicion el borde*/
+.Poly{
+    text-align: center;
+    border: dotted 10pt white;
+    width:500px;
+    padding:10px;
+    right: 45px;
+    margin: 0 auto;
+}
+ /*Se define el color y area de relleno*/
+.Poliday{
+    padding: 30px;
+    color:black;
+	background:linear-gradient( #ebb9ff, #c539fd); 
+}
+
+ /*Se define el color y area de relleno*/
+.Pet{
+    position: center;
+    padding: 30px;
+    color:black;
+	background:linear-gradient( #e091ff, #ce57fd); 
+}
+
+/*Se crea un borde dentro de los contenedores*/
+.Frien{
+    border: dotted 10pt white;
+}
+
+/*Estilos al contenedor como el color de fondo */
+.Contenedor{
+    margin: 0.25em 0em 2em 0em;
+    padding: 0.5em;
+    border: solid 1.5px #a87bc7;
+    border-radius: 4px;
+    background: linear-gradient(#d5c6dc, #ebb9ff);
+    text-align: center;
+}
+
+/*Estilos al enlace */
+.Regis{
+    text-align: center;
+	width:300px;
+	height:40px;
+	border-radius:20px;
+	margin-left:60px;
+	border:0px;
+    right:450px;
+    left: 450px;
+	background-color:rgb(195, 174, 165);
+	font:16px normal normal uppercase helvatice, CASTELLAR,scrif;
+	box-shadow:10px 6px 5px rgb(163, 140, 137);
+}
+
+/*Estilo para que la imagenes cuando pase el cursor se haga un poco mas grande*/
+.Principio img:hover{
+    transform: scale(1.15);
+}
+
+/*Estilos para footer*/
+.footer{
+    color: rgb(113, 94, 102);
+    text-align: center;
+}
+
+/*Estilos de la linea hr*/
+.linea{
+    color: rgb(113, 94, 102);
+}
+
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+}
+
