@@ -22,7 +22,7 @@ app.listen(app.get('port'),()=>{
 app.use(myconnection(mysql,{
     host:'localhost',
     user: 'root',
-    password: 'Janetb03',
+    password: '',
     port: 3306,
     database: 'articulosdb'
 
